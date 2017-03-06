@@ -6,16 +6,17 @@
 </head>
 <body>
 	<div class="contenedor-contenido-pagina">
-		<center>
-			<img src="assets/icon/logo-laboratoria.svg">
-		</center>
-		<div class="dropdown">Hola Maria Grecia
+		<div class="dropdown" style="position: absolute;">Hola Maria Grecia
 			<button onclick="myFunction()" class="dropbtn">&#9776;</button>
 			<div id="myDropdown" class="dropdown-content">
 				<a href="coders.html">Perfil</a>
 				<a href="salir.html">Salir</a>
 			</div>
 		</div>
+		<center>
+			<img src="assets/icon/logo-laboratoria.svg">
+		</center>
+		
 
 		<div >
 			<h1>¿Qué es Laboratoria?</h1>
@@ -38,26 +39,26 @@
 			</ol>
 			<hr>
 			<h3>QUIZ</h3>
-			<div id="quiz1"></div>
+			<div id="quiz"></div>
 			<div>
 				<h3>Existen dos tipos de funciones</h3>
-				<input type="radio" name="p1" value="1">Expresadas y declaradas<br>
-				<input type="radio" name="p1" value="0">Explícitas y declaradas<br>
-				<input type="radio" name="p1" value="0">Expresadas y derivadas<br>
+				<input type="radio" name="r1" value="1" id="e1">Expresadas y declaradas<br>
+				<input type="radio" name="r1" value="0" id="e2">Explícitas y declaradas<br>
+				<input type="radio" name="r1" value="0" id="e3">Expresadas y derivadas<br>
 			</div>
 			<div>
 				<h3>Elije una propiedad de los arreglos</h3>
-				<input type="radio" name="p2" value="0">Clear<br>
-				<input type="radio" name="p2" value="1">Pop<br>
-				<input type="radio" name="p2" value="0">Add<br>
+				<input type="radio" name="r2" value="0" id="r1">Clear<br>
+				<input type="radio" name="r2" value="1" id="r2">Pop<br>
+				<input type="radio" name="r2" value="0" id="r3">Add<br>
 			</div>
 			<div>
 				<h3>¿Qué significa DOM?</h3>
-				<input type="radio" name="p3" value="0">Dual Object Model.<br>
-				<input type="radio" name="p3" value="1">Document Object Model.<br>
-				<input type="radio" name="p3" value="0">Document Obsolet Model<br>
+				<input type="radio" name="r3" value="0" id="d1">Dual Object Model.<br>
+				<input type="radio" name="r3" value="1" id="d2">Document Object Model.<br>
+				<input type="radio" name="r3" value="0" id="d3">Document Obsolet Model<br>
 			</div><br>			
-			<button onclick="enviarResultado()">Enviar</button>
+			<button onclick="resultadoQuiz1();">Enviar</button>
 		</div>
 
 		<div class="hidden" id="div2">
@@ -75,28 +76,28 @@
 			<div id="quiz2"></div>
 			<div>
 				<h3>¿Cuál es el comando para iniciar un repositorio desde la consola?</h3>
-				<input type="radio" name="p1" value="1">git init .<br>
-				<input type="radio" name="p1" value="0">git init<br>
-				<input type="radio" name="p1" value="0">git init add<br>
+				<input type="radio" name="p1" value="0" id="git1">git init .<br>
+				<input type="radio" name="p1" value="1" id="git2">git init<br>
+				<input type="radio" name="p1" value="0" id="git3">git init add<br> 
 			</div>
 			<div>
 				<h3>¿Cuál es la finalidad de hacer una prueba unitaria?</h3>
-				<input type="radio" name="p2" value="1">Comprobar que el código funcione correctamente.<br>
-				<input type="radio" name="p2" value="0">Darle valores a los parametros de dichas funciones.<br>
-				<input type="radio" name="p2" value="0">No tiene ningún fin.<br>
+				<input type="radio" name="p2" value="1" id="cr1">Comprobar que el código funcione correctamente.<br>
+				<input type="radio" name="p2" value="0" id="cr2">Darle valores a los parametros de dichas funciones.<br>
+				<input type="radio" name="p2" value="0" id="cr3">No tiene ningún fin.<br>
 			</div>
 			<div>
 				<h3>¿Qué significa DOM?</h3>
-				<input type="radio" name="p" value="1">Dual Object Model.<br>
-				<input type="radio" name="p2" value="0">Document Object Model.<br>
-				<input type="radio" name="p3" value="0">Document Obsolet Model<br>
+				<input type="radio" name="p3" value="0" id="dm1">Dual Object Model.<br>
+				<input type="radio" name="p3" value="1" id="dm2">Document Object Model.<br>
+				<input type="radio" name="p3" value="0" id="dm3">Document Obsolet Model<br>
 			</div><br>			
-			<button onclick="enviarResultado()">Enviar</button>
+			<!--<button onclick="resultadoQuiz()">Enviar</button>-->
+			<button onclick="resultadoQuiz2();">Enviar</button>
 		</div>
 
 		<div class="hidden" id="div3">
 			<h2>Sprint 3:</h2>
-			<div id="quiz1"></div>
 			<p>No hay lecciones todavía.</p>
 		</div>
 		<script type="text/javascript" src="assets/js/app.js"></script>
