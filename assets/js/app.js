@@ -1,4 +1,6 @@
 /*DROPDOWN JS*/
+var button = document.getElementsByClassName('sprint');
+
 function myFunction() {
 	document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -16,3 +18,13 @@ window.onclick = function(event) {
 		}
 	}
 }
+
+var mostarOcultar = function(e) {
+	var div = document.getElementById(e);
+	if (div.style.display == "block" ) {
+		div.style.display = "none";
+	} else{
+		div.style.display = "block";
+	}
+}
+
